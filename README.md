@@ -27,7 +27,7 @@
     Although I have done many express JS and MongoDB projects, this is my first  Nest JS 
          with SQLite DB (initially) and PostgreSQL (eventually) project.
         
-        Project Overview 
+        Project Overview  (  ProjectPeriod : 3 Nov - 10 Nov )
         
 ![1698981003261](https://github.com/BheshRajNeupane/Nest-Js-CAR-API/assets/108607897/7456bfaa-05a8-4caf-832b-83ac5d1fef36)
 
