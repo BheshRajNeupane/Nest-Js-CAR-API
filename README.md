@@ -25,7 +25,7 @@
 
 ## Description
     Although I have done many express JS and MongoDB projects, this is my first  Nest JS 
-         with SQLite DB (initially) and PostgreSQL (eventually) project.
+         with TypeOrm [SQLite DB (initially) and PostgreSQL (eventually)] project.
         
         Project Overview  (  ProjectPeriod : 3 Nov - 10 Nov )
         
