@@ -26,8 +26,10 @@
 ## Description
     Although I have done many express JS and MongoDB projects, this is my first  Nest JS 
          with TypeOrm [SQLite DB (initially) and PostgreSQL (eventually)] project.
-        
-        Project Overview  (  ProjectPeriod : 3 Nov - 10 Nov )
+  By entering information about their vehicle, such as the model, year, mileage, price, longitude, and latitude (the specific location of the car where it is used), car users may create reports and assess the value of their vehicle using the full Authentication and Authorization system.
+An administrator may accept or reject a report that a vehicle user submits.
+
+ Project Overview  ( OngoingProject -  ProjectDeadline: 20 Nov )
         
 ![1698981003261](https://github.com/BheshRajNeupane/Nest-Js-CAR-API/assets/108607897/7456bfaa-05a8-4caf-832b-83ac5d1fef36)
 
