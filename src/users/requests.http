@@ -5,7 +5,7 @@ POST http://localhost:8800/auth/signup
 
 content-type: application/json
 {
-    "email":"rajuhesh566@gmail.com",
+    "email":"rh6@gmail.com",
     "password":"12345x678"
 }
 PATCH   http://localhost:8800/auth/2
