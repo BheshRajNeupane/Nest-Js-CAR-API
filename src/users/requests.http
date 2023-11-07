@@ -1,23 +1,30 @@
 
-GET http://localhost:8800/auth/2
-
-
-PATCH   http://localhost:8800/auth/2
-
-{
-  "email":"abishek@gmail.com"
-}
-
-Delete http://localhost:8800/auth/3
 
 
 POST http://localhost:8800/auth/signup
 
 content-type: application/json
 {
-    "email":"aashish566@gmail.com",
+    "email":"rajuhesh566@gmail.com",
     "password":"12345x678"
 }
+PATCH   http://localhost:8800/auth/2
+
+{
+  "email":"abi@gmail.com"
+}
+
+GET http://localhost:8800/auth/2
+
+
+
+
+
+
+
+Delete http://localhost:8800/auth/3
+
+
 
 GET http://localhost:8800/auth/1
 
