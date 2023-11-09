@@ -16,7 +16,7 @@ import { CurrentUserInterceptor } from './interceptors/current-user.interceptor'
           AuthService ,
           {//Gobally Scoped Interceptor
             provide:APP_INTERCEPTOR,
-             useClass:sCurrentUserInterceptor
+             useClass:CurrentUserInterceptor
           }
          ]
 })
