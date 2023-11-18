@@ -10,6 +10,8 @@ import { User } from './users/users.entity';
 import { Report } from './reports/reports.entity';
 const cookieSession = require('cookie-session');
 
+console.log(process.env.NODE_ENV);
+
 
 @Module({
   imports: [
@@ -17,23 +19,23 @@ const cookieSession = require('cookie-session');
       isGlobal:true,
       envFilePath: `.env.${process.env.NODE_ENV}`
     }),
-    TypeOrmModule.forRootAsync({
-      inject: [ConfigService],
-      useFactory: (config:ConfigService)=>{
-         return {
-            type:'sqlite',
-            database: config.get<any>('DB_NAME'),
-            synchronize: true,
-            entites:[User , Report],
-         }
-      }
-    }),
-    // TypeOrmModule.forRoot({
-    // type:'sqlite',
-    // database:'db.sqlite',
-    // entities:[User,Report],
-    // synchronize:true, 
-    // }) ,
+    // TypeOrmModule.forRootAsync({
+    //   inject: [ConfigService],
+    //   useFactory: (config:ConfigService)=>{
+    //      return {
+    //         type:'sqlite',
+    //         database: config.get<any>('DB_NAME'),
+    //         synchronize: true,
+    //         entites:[User , Report],
+    //      }
+    //   }
+    // }),
+    TypeOrmModule.forRoot({
+    type:'sqlite',
+    database:'db.sqlite',
+    entities:[User,Report],
+    synchronize:true, 
+    }) ,
    UsersModule,
    ReportsModule
 ],
@@ -50,11 +52,12 @@ const cookieSession = require('cookie-session');
 })
 
 export class AppModule {
+    
     configure(consumer :  MiddlewareConsumer ){  //       2
       consumer
       .apply(
          cookieSession({
-           keys:['adfdfdgd'],
+           keys:['asdfsfd'],
          }),
       ).forRoutes('*');
     }

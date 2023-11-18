@@ -5,10 +5,12 @@ import {
      BeforeRemove, 
      Entity, 
      Column,
-    PrimaryGeneratedColumn
+    PrimaryGeneratedColumn,
+    OneToMany
     } from 'typeorm';
 
-
+import { Report } from '../reports/reports.entity'
+console.log("report" ,Report);
 
 @Entity()
  export class User { 
@@ -20,6 +22,12 @@ import {
 
      @Column()
      password:string;
+     
+     @Column({default:true})
+      admin:boolean;
+
+     @OneToMany(()=> Report , report => report.user)
+     reports:Report[];
 
      @AfterInsert()
      logInsert(){
