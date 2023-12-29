@@ -8,6 +8,7 @@ import { UsersModule } from './users/users.module';
 import { ReportsModule } from './reports/reports.module';
 import { User } from './users/users.entity';
 import { Report } from './reports/reports.entity';
+
 const cookieSession = require('cookie-session');
 
 console.log(process.env.NODE_ENV);
@@ -19,6 +20,7 @@ console.log(process.env.NODE_ENV);
       isGlobal:true,
       envFilePath: `.env.${process.env.NODE_ENV}`
     }),
+      TypeOrmModule.forRoot(),
     // TypeOrmModule.forRootAsync({
     //   inject: [ConfigService],
     //   useFactory: (config:ConfigService)=>{
@@ -30,12 +32,12 @@ console.log(process.env.NODE_ENV);
     //      }
     //   }
     // }),
-    TypeOrmModule.forRoot({
-    type:'sqlite',
-    database:'db.sqlite',
-    entities:[User,Report],
-    synchronize:true, 
-    }) ,
+    // TypeOrmModule.forRoot({
+    // type:'sqlite',
+    // database:'db.sqlite',
+    // entities:[User,Report],
+    // synchronize:true, 
+    // }) ,
    UsersModule,
    ReportsModule
 ],
@@ -52,12 +54,15 @@ console.log(process.env.NODE_ENV);
 })
 
 export class AppModule {
+    constructor(
+       private configService : ConfigService
+    ){}
     
     configure(consumer :  MiddlewareConsumer ){  //       2
       consumer
       .apply(
          cookieSession({
-           keys:['asdfsfd'],
+           keys:[this.configService.get('COOKIE_KEY')],
          }),
       ).forRoutes('*');
     }
