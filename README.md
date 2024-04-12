@@ -23,17 +23,40 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
-    Although I have done many express JS and MongoDB projects, this is my first  Nest JS 
-         with TypeOrm [SQLite DB (initially) and PostgreSQL (eventually)] project.
-  By entering information about their vehicle, such as the model, year, mileage, price, longitude, and latitude (the specific location of the car where it is used), car users may create reports and assess the value of their vehicle using the full Authentication and Authorization system.
-An administrator may accept or reject a report that a vehicle user submits.
+## Project Overview: Ongoing Project
 
- Project Overview  ( OngoingProject -  ProjectDeadline: 20 Nov )
+This project marks a transition into Nest JS with TypeORM, departing from previous experiences with Express JS and MongoDB. The primary objective revolves around creating a robust system for vehicle management, valuation, and reporting, incorporating authentication and authorization mechanisms for enhanced security.
+
+### Key Features:
+
+1. **Vehicle Information Input:**
+   - Users can input details about their vehicles, including model, year, mileage, price, longitude, and latitude, enabling comprehensive reporting and valuation.
+
+2. **Reporting and Valuation:**
+   - Users have the capability to generate reports and assess the value of their vehicles based on the provided information.
+
+3. **Authentication and Authorization:**
+   - A complete authentication and authorization system ensures secure access to the platform, safeguarding user data and functionalities.
+
+4. **Administrative Control:**
+   - Administrators hold the authority to review and manage submitted reports, allowing them to accept or reject reports as necessary.
+
+### Technologies Utilized:
+
+- **Nest JS:** Leveraged for building scalable and maintainable server-side applications.
+- **TypeORM:** Employed for Object-Relational Mapping (ORM) to facilitate database interactions.
+- **SQLite DB (Initially) and PostgreSQL (Eventually):** Chosen as the database solutions to accommodate varying project stages and requirements.
+
+### Roadmap:
+
+- **Development Progress:** Continuously evolving towards project completion, with a focus on meeting the impending deadline.
+- **Migration to PostgreSQL:** Scheduled for the latter stages of the project to enhance scalability and robustness.
+
+### Conclusion:
+
+The Nest JS project with TypeORM represents an exciting new chapter in the realm of server-side development, offering a powerful foundation for building sophisticated and feature-rich applications. With ongoing development efforts and a clear roadmap in place, the project is poised to deliver a comprehensive solution for vehicle management and valuation within the specified timeframe.
         
-![1698981003261](https://github.com/BheshRajNeupane/Nest-Js-CAR-API/assets/108607897/7456bfaa-05a8-4caf-832b-83ac5d1fef36)
 
-![1698981003257](https://github.com/BheshRajNeupane/Nest-Js-CAR-API/assets/108607897/f6858c75-cdbc-4f7e-9787-532f4bfe53dc)
 
 ## Installation
 
