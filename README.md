@@ -23,7 +23,7 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Project Overview: Ongoing Project
+## Project Overview: 
 
 This project marks a transition into Nest JS with TypeORM, departing from previous experiences with Express JS and MongoDB. The primary objective revolves around creating a robust system for vehicle management, valuation, and reporting, incorporating authentication and authorization mechanisms for enhanced security.
 
